@@ -5,17 +5,17 @@ const averagePair = (arr, expectedValue) => {
     for (let i = 0; i <= arr.length; i++) {
       for (let j = 0; j <= arr.length; j++) {
           if (arr[i] < arr[j]) {
-              let average = (arr[firstValue] + arr[secondValue]) / 2
+              let average = (arr[firstValue] + arr[secondValue]) / 2;
               //console.log(arr[firstValue]);
               //console.log(arr[secondValue]);
               if (average === expectedValue) {
                   return true;
               }
               else if (average > expectedValue) {
-                  secondValue--
+                  secondValue--;
               }
               else {
-                  firstValue++
+                  firstValue++;
               }
           } 
       } 
